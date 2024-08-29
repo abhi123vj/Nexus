@@ -30,7 +30,7 @@ const Auth = () => {
             </p>
           </div>
           <div className="flex items-center justify-center w-full  ">
-            <Tabs defaultValue="account" className="w-3/4">
+            <Tabs defaultValue="sign-in" className="w-3/4">
               <TabsList className="w-full rounded-none bg-transparent">
                 <TabsTrigger
                   value="sign-in"
@@ -47,8 +47,9 @@ const Auth = () => {
               </TabsList>
               <TabsContent
                 value="sign-in"
-                className="flex flex-col gap-5 mt-10"
+                className="flex flex-col gap-5 mt-10 h-full "
               >
+                
                 <Input
                   type="email"
                   placeholder="Email"
@@ -107,11 +108,7 @@ const Auth = () => {
           </div>
         </div>
         <div className="hidden xl:flex items-center justify-center w-full">
-          <img
-            src={SignUpLogo}
-            className=" h-[50%]"
-            alt=""
-          />
+          <img src={SignUpLogo} className=" h-[50%]" alt="" />
         </div>
       </div>
     </div>
